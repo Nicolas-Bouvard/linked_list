@@ -40,6 +40,17 @@ void ll_insert_at(linked_list_t *list, void *element, size_t index);
 //insert an element at the beginning of the list
 void ll_insert(linked_list_t *list, void *element);
 
+//swap two elements at the index asked
+void ll_swap(linked_list_t *list, size_t index1, size_t index2);
+
+//swap two element depending on the element
+void ll_swap_elements(linked_list_t *list, ll_element_t *elem1,
+ll_element_t *elem2);
+
+//pop the element sent and return the index of this element.
+//if the function don't find the element, it return -1
+size_t ll_pop_element(linked_list_t *list, void *element, bool free_elem);
+
 //pop an element at the index asked
 void ll_pop_at(linked_list_t *list, size_t index, bool free_elem);
 

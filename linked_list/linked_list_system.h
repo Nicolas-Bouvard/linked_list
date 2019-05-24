@@ -18,7 +18,7 @@ void ll_insert(linked_list_t *list, void *element);
 void ll_insert_at(linked_list_t *list, void *element, size_t index);
 void ll_append(linked_list_t *list, void *element);
 
-void ll_pop_at(linked_list_t *list, size_t index, bool free_elem);
+void ll_swap(linked_list_t *list, size_t index1, size_t index2);
 
 void ll_pop(linked_list_t *list, bool free_elem);
 void ll_pop_at(linked_list_t *list, size_t index, bool free_elem);

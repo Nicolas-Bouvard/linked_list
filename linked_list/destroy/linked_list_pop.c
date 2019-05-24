@@ -29,3 +29,19 @@ void ll_pop(linked_list_t *list, bool free_elem)
 {
     ll_pop_at(list, list->size - 1, free_elem);
 }
+
+size_t ll_pop_element(linked_list_t *list, void *element, bool free_elem)
+{
+    ll_element_t *temp = list->first;
+    size_t i = 0;
+
+    while (temp) {
+        if (temp->element == element) {
+            ll_pop_at(list, i, free_elem);
+            return (i);
+        }
+        i++;
+        temp = temp->next;
+    }
+    return (-1);
+}
