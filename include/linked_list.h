@@ -40,4 +40,10 @@ void ll_insert_at(linked_list_t *list, void *element, size_t index);
 //insert an element at the beginning of the list
 void ll_insert(linked_list_t *list, void *element);
 
+//pop an element at the index asked
+void ll_pop_at(linked_list_t *list, size_t index, bool free_elem);
+
+//pop the last element of the list
+void ll_pop(linked_list_t *list, bool free_elem);
+
 #endif /* !LINKED_LIST_H_ */
