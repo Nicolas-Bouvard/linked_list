@@ -57,4 +57,7 @@ void ll_pop_at(linked_list_t *list, size_t index, bool free_elem);
 //pop the last element of the list
 void ll_pop(linked_list_t *list, bool free_elem);
 
+//Return the element at the given index
+void *ll_get_at(linked_list_t *list, size_t index);
+
 #endif /* !LINKED_LIST_H_ */
