@@ -7,12 +7,6 @@
 
 #include "linked_list_system.h"
 
-typedef struct test_s
-{
-    int index;
-    char *useless;
-}test_t;
-
 void ll_swap_system(linked_list_t *list, ll_element_t *elem1,
 ll_element_t *elem2)
 {
